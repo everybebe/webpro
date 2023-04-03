@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Shop Page</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+<body>
+
+	<header class="main_header">
+		<h1>
+			<img id="h_img" alt="chopa.jpg" src="../images/chopa.jpg"> <a
+				href="main.html">Web shop</a>
+		</h1>
+	</header>
+
+	<nav class="main_nav">
+		<ul>
+			<li><a href=“#">HOME</a></li>
+			<li><a href=“#">ABOUT US</a></li>
+			<li><a href=“#">NEWS</a></li>
+			<li><a href=“#">MY ACCOUNT</a></li>
+			<li><a href=“#">CONTACTS</a></li>
+		</ul>
+	</nav>
+
+<div class="center">
+	<aside id="left">
+	
+	<h3>카테고리</h3>
+		<ul>
+			<li><a href="../html/computer.html" target="“ifr”">컴퓨터</a></li>
+			<li><a href="../html/clothing.html" target="“ifr”">의류</a></li>
+			<li><a href="../html/음악.html" target="“ifr”">음악</a></li>
+			<li><a href="../html/영화.html" target="“ifr”">영화</a></li>
+			<li><a href="../html/스포츠레저.html" target="“ifr”">스포츠/레져</a></li>
+			<li><a href="../html/가구인테리어.html" target="“ifr”">가구/인테리어</a></li>
+			<li><a href="../html/식품.html" target="“ifr”">식품</a></li>
+		</ul>
+	</aside>
+
+	<section id="main">
+		<article id="article1">
+		<div>
+			  <iframe src="../html/computer.html" name=“ifr” scrolling="no" ></iframe>
+			</div>
+		</article>
+	</section>
+
+	<aside id="right">
+		<div id="shopcart">
+		<h4>Shopping Cart</h4>
+		현재 쇼핑카트에 물품이 없습니다.<br>
+		<a href="../html/shopacart.html" target="blank">쇼핑카트 보기</a>
+		</div>
+		
+		<div id="login">
+			<h4>Log In</h4>
+			<form action="#">
+	    <span>아이디</span><br> 
+	    <input type="text" name="id"><br>
+		<span>패스워드</span><br> 
+		<input type="password" name="pw"><br><br>
+		<input type="submit" value="로그인">
+		<input type="reset"  value="초기화"><br>
+		<a href="../html/회원가입register.html" target="blank">회원가입</a> 
+		<a href="#">비밀번호 분실</a>
+			</form>
+		</div>
+	</aside>
+</div>
+
+<footer>
+<pre>2023.03.06       대덕인재개발원</pre>
+</footer>
+
+
+</body>
+</html>

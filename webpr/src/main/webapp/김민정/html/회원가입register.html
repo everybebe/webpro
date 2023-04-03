@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+<body>
+<form action="../html/join.jsp" method="post"></form>
+<h3 id="jointitle">회원가입 페이지</h3>
+<fieldset>
+<legend>회원정보입력</legend>
+<label for="id">아이디</label>
+<input type="text" name="id"><button id="idchek" type="submit">중복검사</button> <br>
+
+<label for="name">패스워드</label>
+<input type="text" name="pw"> <br>
+
+<label for="name">패스워드 확인</label>
+<input type="text" name="pw2"> <br>
+
+<label for="name">이름</label>
+<input type="text" name="name" placeholder="홍길동"> <br>
+
+<label for="name">휴대폰번호</label>
+<input type="text" name="tel" placeholder="010-1234-5678"> <br>
+
+<label for="name">이메일</label>
+<input type="text" name="mail" placeholder="abd123@google.com"> <br>
+
+<label for="date">생일 </label>
+<input type="date" id="bir"><br>
+
+<label for="name">홈페이지</label>
+<input type="text" name="homepage" placeholder="www.google.com"> <br> 
+
+<label for="gender">성별</label>
+<input id="gender" type="radio" name="gender" value="남자"> 남성
+<input id="gender" type="radio" name="gender" value="여자"> 여성 <br>
+
+<button id="joinbtn" type="submit">제출</button>
+<button id="joinbtn" type="reset">초기화</button>
+</fieldset>
+
+
+</body>
+</html>

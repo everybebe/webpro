@@ -1,0 +1,125 @@
+
+2월 22, 2023 14:56:59.478 NEW SESSION
+2월 22, 2023 14:56:59.478 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 22, 2023 17:33:55.919 [114464:109576:0222/173355.919:ERROR:sharing_service.cc(252)] Device un-registration failed with fatal error
+2월 22, 2023 17:33:56.982 [114464:109576:0222/173356.982:ERROR:device_event_log_impl.cc(218)] [17:33:56.982] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+
+2월 23, 2023 14:36:07.21 NEW SESSION
+2월 23, 2023 14:36:07.22 [142116:142500:0223/143607.020:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+2월 23, 2023 14:36:44.671 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+2월 23, 2023 16:01:31.734 [143888:143500:0223/160131.734:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 23, 2023 16:01:31.735 [143888:143500:0223/160131.734:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 23, 2023 16:01:31.735 [143888:143500:0223/160131.734:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 23, 2023 16:56:55.558 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+2월 24, 2023 17:20:23.880 NEW SESSION
+2월 24, 2023 17:20:23.881 [141420:164172:0224/172023.874:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+2월 28, 2023 14:25:48.598 NEW SESSION
+2월 28, 2023 14:25:48.598 [172908:174644:0228/142548.596:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 14:25:48.598 [172908:174644:0228/142548.596:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 14:51:44.778 [172908:174644:0228/145144.777:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 15:04:09.48 [172908:174644:0228/150409.048:ERROR:interface_endpoint_client.cc(695)] Message 5 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:13:45.108 [172908:174644:0228/161345.108:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:13:45.109 [172908:174644:0228/161345.108:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:13:45.109 [172908:174644:0228/161345.108:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:40:20.573 [172908:174644:0228/164020.572:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:40:20.573 [172908:174644:0228/164020.573:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:40:43.195 [172908:174644:0228/164043.195:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:43:20.543 [172908:174644:0228/164320.543:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+2월 28, 2023 16:53:19.383 [172908:174644:0228/165319.383:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+3월 06, 2023 14:45:57.974 NEW SESSION
+3월 06, 2023 14:45:57.974 [51036:52540:0306/144557.962:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 18:39:21.666 [50228:20684:0306/183921.665:ERROR:device_event_log_impl.cc(218)] [18:39:21.666] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+3월 06, 2023 18:53:51.733 [50228:20684:0306/185351.733:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 19:27:26.956 [50228:49680:0306/192726.956:ERROR:cert_verify_proc_builtin.cc(677)] CertVerifyProcBuiltin for www.perfectreplicawatch.co.uk failed:
+3월 06, 2023 19:27:26.956 ----- Certificate i=0 (CN=*.parkingcrew.net,O=Team Internet AG,L=M\C3\BCnchen,ST=Bayern,C=DE) -----
+3월 06, 2023 19:27:26.957 ERROR: Time is after notAfter
+3월 06, 2023 19:27:26.957 
+3월 06, 2023 19:27:26.957 
+3월 06, 2023 19:49:56.506 [50228:20684:0306/194956.506:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 19:54:24.371 [50228:20684:0306/195424.371:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 20:01:11.629 [50228:20684:0306/200111.629:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 20:01:11.630 [50228:20684:0306/200111.629:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 20:01:11.630 [50228:20684:0306/200111.629:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 20:04:40.461 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+3월 06, 2023 20:30:56.377 [50228:20684:0306/203056.377:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 20:40:03.488 [50228:20684:0306/204003.487:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 06, 2023 20:40:50.869 [50228:49680:0306/204050.869:ERROR:cert_verify_proc_builtin.cc(677)] CertVerifyProcBuiltin for api.lunamedia.io failed:
+3월 06, 2023 20:40:50.870 ----- Certificate i=0 (CN=*.lunamedia.io) -----
+3월 06, 2023 20:40:50.870 ERROR: Time is after notAfter
+3월 06, 2023 20:40:50.870 
+3월 06, 2023 20:40:50.870 
+
+3월 08, 2023 17:37:03.303 NEW SESSION
+3월 08, 2023 17:37:03.303 [96416:73036:0308/173703.292:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+3월 10, 2023 16:08:55.354 NEW SESSION
+3월 10, 2023 16:08:55.354 [0310/160855.350:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PC-28\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6f59bb30-8585-429f-acdc-c75471bb12e9: 지정된 파일을 찾을 수 없습니다. (0x2)
+3월 10, 2023 16:08:55.355 [0310/160855.352:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PC-28\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6f59bb30-8585-429f-acdc-c75471bb12e9: 지정된 파일을 찾을 수 없습니다. (0x2)
+3월 10, 2023 16:08:55.356 [0310/160855.355:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PC-28\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6f59bb30-8585-429f-acdc-c75471bb12e9: 지정된 파일을 찾을 수 없습니다. (0x2)
+3월 10, 2023 16:08:55.362 [0310/160855.362:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PC-28\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6f59bb30-8585-429f-acdc-c75471bb12e9: 지정된 파일을 찾을 수 없습니다. (0x2)
+
+3월 13, 2023 14:02:25.386 NEW SESSION
+3월 13, 2023 14:02:25.386 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2023 14:16:46.835 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2023 14:28:56.461 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2023 15:17:22.529 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2023 15:51:12.919 [24168:21532:0313/155112.919:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 13, 2023 16:44:25.782 [24168:21532:0313/164425.782:ERROR:device_event_log_impl.cc(222)] [16:44:25.782] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+3월 13, 2023 17:35:44.655 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2023 17:40:30.917 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 15, 2023 16:17:16.555 NEW SESSION
+3월 15, 2023 16:17:16.555 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 15, 2023 17:23:11.250 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 15, 2023 17:25:32.267 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 15, 2023 17:40:02.693 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 17, 2023 14:00:43.830 NEW SESSION
+3월 17, 2023 14:00:43.830 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 17, 2023 14:03:43.964 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 17, 2023 14:59:24.628 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 17, 2023 15:01:49.995 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 17, 2023 15:04:21.897 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 17, 2023 15:34:57.876 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 20, 2023 14:00:36.482 NEW SESSION
+3월 20, 2023 14:00:36.482 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 20, 2023 15:40:01.81 [19560:34204:0320/154001.081:ERROR:interface_endpoint_client.cc(695)] Message 5 rejected by interface blink.mojom.WidgetHost
+
+3월 21, 2023 14:10:18.997 NEW SESSION
+3월 21, 2023 14:10:18.997 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 21, 2023 15:09:52.393 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 21, 2023 15:23:34.769 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 21, 2023 17:03:55.301 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 21, 2023 17:07:28.951 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 21, 2023 17:14:31.135 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 21, 2023 17:39:19.850 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 22, 2023 17:04:09.415 NEW SESSION
+3월 22, 2023 17:04:09.415 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 24, 2023 17:00:17.929 NEW SESSION
+3월 24, 2023 17:00:17.929 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 24, 2023 18:10:43.08 [41140:38664:0324/181043.008:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+3월 29, 2023 15:37:32.486 NEW SESSION
+3월 29, 2023 15:37:32.486 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 29, 2023 17:06:02.663 [13616:46176:0329/170602.663:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+3월 30, 2023 14:07:00.548 NEW SESSION
+3월 30, 2023 14:07:00.548 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 30, 2023 15:57:03.358 [75640:46208:0330/155703.358:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 30, 2023 16:10:32.383 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 30, 2023 16:40:11.904 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 30, 2023 17:34:29.67 [85040:85036:0330/173429.066:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 30, 2023 18:25:53.635 [85040:79800:0330/182553.635:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+3월 30, 2023 21:26:18.517 [85040:79800:0330/212618.517:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+3월 30, 2023 21:26:20.540 [85040:79800:0330/212620.540:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+3월 30, 2023 21:26:21.50 [85040:79800:0330/212621.049:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+3월 30, 2023 21:56:46.633 [85040:79800:0330/215646.633:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+3월 31, 2023 08:56:37.354 [85040:79800:0331/085637.341:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+3월 31, 2023 08:56:39.367 [85040:79800:0331/085639.367:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+3월 31, 2023 08:56:39.377 [85040:84120:0331/085639.377:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2

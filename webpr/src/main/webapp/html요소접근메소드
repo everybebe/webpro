@@ -1,0 +1,27 @@
+ 접근 메소드 - document.getElementById('id이름') id는 중복될 수 없어서 Elements의 's'가 안 붙음
+	 		   document.getElementsByClass('class이름') 데이터가 여러개라서 배열임
+	 		   document.getElementsByTagName('tag이름') 데이터가 여러개라서 배열임 // 태그 모두 검색
+	 		   document.getElementsByName('name이름') 데이터가 여러개라서 배열임
+	 				
+	 		   document.formname.요소name 
+	 
+			   document.querySelector('#이름')  
+	 		   document.querySelector('.이름')
+	 		   document.querySelector('tag이름')  //첫번째 태그만 검색함
+
+	 		   document.querySelectorAll('.이름') 
+	 		   document.querySelectorAll('tag이름') 
+	
+	 		   
+출력
+
+.value
+
+.innerHTML = str;
+출력하는 str속에 html태그가 포함 되었을 경우 
+
+
+.innerText = str;
+출력하는 str속에 html태그가 포함 되어 있지 않을 경우 
+
+

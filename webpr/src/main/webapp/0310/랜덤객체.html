@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mystyle.css">
+<script>
+let rand = parseInt(Math.random() * 100 + 1);   //난수발생
+
+let count = 0;
+let input = ""
+
+proc1 = () => {
+	
+	count ++;	
+	
+	//입력한 값을 가져오기	 id=su인 input요소를 검색 - value
+	suvalue = document.getElementById('su').value;	
+	
+	input += suvalue + " ";
+	
+	//비교
+	//입력한 값과 발생한 난수 rand와 비교 
+	//같으냐? res = "정답입니다."
+	//작으냐? res = "더 큰 수 입력"
+	//크냐? res = "더 작은 수 입력"
+	if(suvalue == rand) {
+		res ="정답입니다<br>";
+		res +="발생난수 " + rand + "<br>";
+		res += input + "<br>"
+		res += "입력 횟수 : " + count + "<br>";
+		
+	}else if(suvalue < rand ) {
+		res = "더 큰 수 입력";
+	}else if(suvalue > rand) {
+		res = "더 작은 수로 입력";
+	}
+	
+	//출력
+	document.getElementById('result1').innerHTML = res;	
+	
+}
+
+proc2 = () => {
+	const num = new Array(); /* const num = []; */
+	
+	while(true) {
+		//입력
+		rand = parseInt(Math.random() * 45 + 1);
+		
+		//입력값 비교 indexOf() -1일 때 저장
+		idx = num.indexOf(rand);
+		
+		if(idx == -1) num.push(rand);
+		
+		//배열개수 비교 - break;
+		if(num.length >= 6) break;
+	} 
+	//출력
+	document.getElementById('result2').innerHTML = num;
+
+}
+
+</script>
+</head>
+
+<body>
+
+
+	<div class="box">
+		<p> 1~ 100 사이의 난수를 발생,난수를 숫자 입력해서 알아맞추기		
+		</p>
+		<input type="text" id="su">
+		<input type="button" value="확인" onclick="proc1()"> <br>
+		<br>
+
+		<div class="result" id="result1"></div>
+	
+	</div>
+	
+	<div class="box">
+		<p> 로또 번호를 생성하는 프로그램을 작성하시오. <br>
+			(1번 ~ 45번 중 6개의 번호를 추첨) 중복은 되지 않도록 한다.
+		</p>
+		<input type="button" value="확인" onclick="proc2()"> <br>
+		<br>
+
+		<div class="result" id="result2"></div>
+	
+	</div>
+</body>
+</html>

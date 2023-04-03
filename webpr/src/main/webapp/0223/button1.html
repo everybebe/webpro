@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+span {
+	display: inline-block;  /*아이디 비밀번호 길이 같게*/
+	width: 120px;
+	height: 30px;
+}
+
+</style>
+</head>
+<body>
+<form>
+
+	<span>아이디</span>
+	<input type="text" name="id"> <br>
+	
+	<span>비밀번호</span>
+	<input type="password" name="pass"> <br>
+	
+	<input type="button" value="확인" onclick="alert('hello')">
+	
+</form>
+
+<form action="button.jsp" method="post">
+	<span>아이디</span>
+	<input type="text" name="id"> <br>
+	
+	<span>비밀번호</span>
+	<input type="password" name="pass"> <br>
+	
+	<span>성별</span>
+	<input type="radio" name="gender" value="남자"> 남성
+	<input type="radio" name="gender" value="여자"> 여성
+	<br>
+	
+	<span> 좋아하는 음식 </span><br>
+	<input type="checkbox" name="foods" value="떡볶이" checked>떡볶이
+	<input type="checkbox" name="foods" value="치맥">치킨과 맥주
+	<input type="checkbox" name="foods" value="피자와인">피자와 와인
+	<input type="checkbox" name="foods" value="잡채">잡채
+	<input type="checkbox" name="foods" value="삼겹살">삼겹살
+	<input type="checkbox" name="foods" value="족발">족발
+	
+	<br><br>
+	
+	<span>첨부파일</span>
+	<input type="file" name="file">
+	<br><br>	
+	<input type="submit">
+
+</form>
+</body>
+</html>
+

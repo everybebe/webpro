@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mystyle.css">
+<script>
+/* function proc1(op) {
+	this : proc1()함수를 호출한 button객체
+	
+}
+
+proc1 = function(op) {
+	this : proc1()함수를 호출한 button객체
+	
+}
+ */
+proc1 = (op) => {
+	/* this : 람다 함수, 현재 함수 자체 */
+
+	//입력한 값 가져오기 - 각 id를 검색 - value
+	fvalue = document.getElementById('first').value.trim();    /* 전역변수 */
+	svalue = document.getElementById('second').value.trim();  /* 전역변수 */
+	
+	/* a = window.isNaN(fvalue);
+	b = window.isNan(svalue);
+	console.log(a, b); */
+	
+	//정규식 /^ $/
+	freg = /^[0-9]+$/;
+	sreg = /^[0-9]+$/;
+	
+	
+	if(freg.test(fvalue) && sreg.test(svalue)) { 
+
+	//op를 비교
+    switch(op) {
+	case "+" :
+		res = add();
+		break;
+	case "-" :
+		res = minus();
+		break;
+	case "*" :
+		res = multi();
+		break;
+	case "/" :
+		res = div();
+		break;
+	}	
+
+	document.getElementById('result').innerHTML = res;
+	
+	}else {
+	  alert("데이타가 올바르지 않습니다");
+	} 
+}
+
+add = () => {
+	return parseInt(fvalue) + parseInt(svalue);
+}
+minus = () => {
+	return fvalue - svalue;
+}
+multi = () => {
+	return fvalue * svalue;
+}
+
+div = () => {
+	return fvalue / svalue;
+}
+
+
+
+</script>
+</head>
+<body>
+<div class="box">
+
+첫번째수 <input type="text" id="first" patterun="[0-9]+"> <br>
+두번째수 <input type="text" id="second" patterun="\d+"> <br> 
+<br>
+
+<input type="button" value="+" onclick="proc1('+')">
+<input type="button" value="-" onclick="proc1('-')">
+<input type="button" value="*" onclick="proc1('*')">
+<input type="button" value="/" onclick="proc1('/')">
+<br><br>
+
+
+<div class="result" id="result"></div>
+</div>
+</body>
+</html>

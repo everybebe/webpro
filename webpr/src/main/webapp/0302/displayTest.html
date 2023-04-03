@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	p{
+		font-size: 2.0em;
+		background: yellow;
+		
+		display: none;
+	}
+</style>
+</head>
+<body>
+<pre>
+	보이기 버튼을 클릭하면 p태그가 보이고
+	감추기 버튼을 클릭하면 p태그를 감춘다
+</pre>
+	<p>무궁화 꽃이 피었습니다.</p>
+	<br>
+	<button type="button" onclick="proc1()">보이기</button>
+	<button type="button" onclick="proc2()">감추기</button>
+	
+	<script>
+	function proc1() {
+		//p태그를 보이게 한다
+		//p태그를 검색
+		ptag = document.getElementsByTagName('p');  /* 배열 */
+		
+		ptag[0].style.display = "block";
+	}
+	/* 전역변수는 전체에 쓸 수 있고 지역변수(var)는 그 안에서만 사용 가능하다. */
+	function proc2() {
+		/* var ptag = document.getElementsByTagName('p'); 지역변수일 때는 이렇게 다시 선언해야 함*/
+		ptag[0].style.display = "none";
+	}
+	</script>
+</body>
+</html>

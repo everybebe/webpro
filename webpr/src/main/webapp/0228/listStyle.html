@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	min-width: 700px;  /* 창 크기를 줄여도 더 이상 줄어지지 않게*/
+}
+ul,li,ol {
+	box-sizing: border-box;
+}
+ul, ol{
+	border : 1px solid black;
+	width: calc(20% - 1%); /* calc - 기호 앞 뒤 공백은 필수임. 창 크기를 줄였을 때 밑으로 떨어지지 않게 해줌 */
+	margin: 10px;
+	padding: 20px;
+	float: left;
+	
+	height: 160px;
+	overflow: auto;
+	
+} 
+li {
+	border: 1px dotted green;
+
+}
+#u1 {
+	list-style-type: disc;
+}
+#u2 {
+	list-style-type: circle;
+	list-style: square inside url(../images/check.png);
+}
+#u3 {
+	list-style-type: square;
+	list-style-position: inside; /* 기호가 li안으로 들어 옴*/
+}
+#u4 {
+	list-style-image: url(../images/check.png);
+	list-style-position: inside;
+}
+hr {
+	clear: both; /* ol도 옆으로 left되려면 블록 시켜야하기때문에 ul과 ol사이에 hr이나 br을 추가해야됨*/
+}
+/* ol {
+	width: calc(20% - 1%);
+	float: left;
+} */
+
+#ol {
+	list-style-type: decimal;
+}
+#o2 {
+	list-style: upper-alpha inside;  /* 타입 / 포지션 */
+}
+#o3 {
+	list-style: hangul inside; /*  한글 번호 (가,나,다,라) */
+}
+#o4 {
+	
+}
+</style>
+</head>
+<body>
+<ul id="u1">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ul>
+
+<ul id="u2">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ul>
+
+<ul id="u3">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ul>
+
+<ul id="u4">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ul>
+
+<hr>
+
+<ol id="o1">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ol>
+
+<ol id="o2">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ol>
+
+<ol id="o3">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ol>
+
+<ol id="o4">
+	<li>html</li>
+	<li>css</li>
+	<li>javascript</li>
+	<li>ajax</li>
+</ol>
+</body>
+</html>

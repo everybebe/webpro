@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div{
+	border: 1px solid blue;
+	margin: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+#main{
+	display: flex;
+	flex-direction: column;
+}
+#header, #footer{
+
+	height: 100px;
+}
+#container{
+	display: flex;
+	height: 400px;
+	
+	/* 기본 값이 좌우 정렬이라서 좌우정렬은 따로 지정 안해줘도 됨. */
+	
+}
+#left{
+	flex: 30%;		
+}
+#center{
+	flex: 70%;
+}
+</style>
+
+</head>
+<body>
+<div id="main">
+
+	<div id="header">header</div>
+
+	<div id="container">
+		<div id="left">left</div>
+		<div id="center">center</div>
+	</div>
+	
+	<div id="footer">footer</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mystyle.css">
+<script>
+proc1 = () => {
+	
+	ultag = document.getElementsByTagName('ul')[0];
+	
+	itemlist = ultag.getElementsByTagName('li');  //ul 0번째 밑에 있는 li 전부 포함
+	
+	str = "";
+	for(i=0; i<itemlist.length; i++) {
+		str += itemlist[i].firstChild.data + "<br>";
+	}
+	document.getElementById('result1').innerHTML = str;
+	
+}
+
+proc2 = () => {
+	
+	ultag = document.getElementsByTagName('ul')[1];
+	listitem = ultag.getElementsByTagName('li');
+	
+	for(i=0; i<listitem.length; i++) {
+		text = listitem[i].firstChild.data;
+		//alert(text);
+		imgtag = document.createElement('img');
+		imgtag.src = "../images/" + text;
+		imgtag.alt = text;
+		listitem[i].appendChild(imgtag);
+	}
+}
+
+proc3 = (litag) => {
+	
+	text = litag.firstChild.data;
+	imgtag = document.createElement('img');
+	imgtag.src= "../images/" + text;
+	imgtag.alt = text;
+	
+	litag.appendChild(imgtag);
+
+}
+
+arr=["hello","happy", "안녕", "알사탕", "굿모닝", "javaScript", "html", "css", "인간햇살"];
+// 전역변수이지만 함수 안에 넣어놓으면 넣어져있는 그 함수를 먼저 실행하고 다른 함수를 실행해야 값이 출력 됨.
+// 순서에 상관없이 하려고 빼놓음
+
+
+proc4 = () => {
+	
+	rand = parseInt(Math.random() * arr.length); //arr[rand]
+	
+	ptag = document.createElement('p');
+	text = document.createTextNode(arr[rand]);
+	
+	ptag.appendChild(text);
+	
+	//document.getElementById('result4').appendChild(ptag);
+	r4 = document.getElementById('result4');
+	r4.appendChild(ptag);	
+}
+
+delproc = () => {
+	
+	
+	r4.removeChild(r4.firstChild);
+	
+}
+
+proc5 = () => {
+	
+	//랜덤 생성 - 문자열 선택
+	rand = parseInt(Math.random() * arr.length);
+	
+	//문자열로 textNode 생성
+	text = document.createTextNode(arr[rand]);
+	
+	//input tag 생성
+	inputtag = document.createElement('input'); 
+	
+	//inputtag의 속성 - type, value
+	inputtag.type = "button";
+	inputtag.value = "삭제";
+	inputtag.onclick = function() {  //this를 쓸 때는 람다함수를 사용하면 안됨
+		this.parentNode.remove() //부모인 p를 삭제해라.
+	};
+		
+	//p태그 생성
+	ptag = document.createElement('p');
+	
+	//p태그에 textNode 추가
+	ptag.appendChild(text);
+	
+	//p태그에 inputtag 추가
+	ptag.appendChild(inputtag);
+	
+	//result5에 p태그를 추가
+	r5 = document.getElementById('result5');
+	r5.appendChild(ptag);
+	
+	//document.getElementById('result5').appendchild(ptag);
+	
+}
+
+imgrand = null;
+
+proc6 = (but) => {  //매개변수는 무조건 지역변수임.
+	
+	//border값을 가져온다
+	//비교 있으면 "none"로 설정
+	if(imgrand != null) {
+		imgrand.style.border = "none";
+	}
+	
+	
+	//this를 받는 매개변수 but가 없을 때 시작버튼 검색
+	//시작버튼 검색
+	//bstart = document.getElementById('pro6')
+	
+	but.style.display = "none";
+	gbut = but; //지역변수를 전역변수로 변경
+	
+	//img들의 부모요소 imgd를 검색
+	vdimg = document.getElementById('imgd');
+	
+	a = setInterval(function(){
+		//첫번째 자식 img를 선택
+		fimg = vdimg.firstChild;
+		
+		//부모의 끝으로 선택된 첫번째 자식을 추가한다.
+		vdimg.appendChild(fimg);	
+		
+	}, 500);
+	
+}
+
+stop = () => {
+	
+	gbut.style.display = "inline";
+	
+	clearInterval(a);
+	
+	//이미지의 개수 
+	imleng = document.querySelectorAll('.im').length;
+	
+	//랜덤 - 이미지의 개수 범위 내에서 랜덤 발생
+	rand = parseInt(Math.random() * imleng); // 랜덤 값 추출
+	
+	imgrand = document.querySelectorAll('.im')[rand];
+		
+	imgrand.style.border = "8px double red"; //클래스명 im의 rand번째 
+}
+
+</script>
+<style>
+img{
+	width: 70px;
+	height: 70px;
+	border-radius : 50%;
+}
+#imgd {
+	width:80%;
+	height: 100px;
+	margin: 10px;
+	border: 5px double blue;;
+}
+#imgd img{
+	width:100px;
+	height: 100px;
+	border-radius: 50%;	
+}
+</style>
+</head>
+
+<body>
+
+	<div class="box">
+		<p>
+		
+		</p>
+		 <ul>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+			<li>List item 5</li>
+		 </ul>
+		 
+		<input type="button" value="확인" onclick="proc1()"> <br>
+		<br>
+
+		<div class="result" id="result1"></div>
+	
+	</div>
+	
+	<div class="box">
+		<p>
+		li요소의 text를 가져와서 img 객체를 생성하여 추가한다.
+		</p>
+		 <ul>
+			<li>img1.jpg</li>
+			<li>img2.jpg</li>
+			<li>img3.jpg</li>
+			<li>img4.jpg</li>
+			<li>img5.jpg</li>
+		 </ul>
+		 
+		<input type="button" value="확인" onclick="proc2()"> <br>
+		<br><br>
+
+		<div class="result" id="result2"></div>
+	
+	</div>
+	
+	<div class="box">
+		<p>
+		li요소의 onClick이벤트로 실행한다.<br>
+		이벤트가 발생되면 text를 가져와서 img객체를 생성하여 추가한다.
+		</p>
+		<ul>
+			<li onclick="proc3(this)">img1.jpg</li>
+			<li onclick="proc3(this)">img2.jpg</li>
+			<li onclick="proc3(this)">img3.jpg</li>
+			<li onclick="proc3(this)">img4.jpg</li>
+			<li onclick="proc3(this)">img5.jpg</li>
+		</ul>
+		 
+		<input type="button" value="확인" onclick="proc3()"> <br>
+		<br><br>
+		<div class="result" id="result3"></div>
+	
+	</div>	
+	
+	<div class="box">
+		<p>
+		 랜덤으로 발생되는 문자열을 textNode로 생성한다 <br>
+		 p태그를 생성하여 textNode 추가한다 <br>
+		 result4에 p태그를 추가한다. <br>
+		</p>
+	
+		 
+		<input type="button" value="추가" onclick="proc4()"> <br>
+		<input type="button" value="삭제"  onclick="delproc()"> <br>
+		<br><br>
+		<div class="result" id="result4"></div>
+	
+	</div>	
+	
+		<div class="box">
+		<p>
+		 랜덤으로 발생되는 문자열을 textNode로 생성한다  <br>
+		 input 태그를 생성 - type, value 속성 <br>
+		 p태그를 생성하여 textNode와 input태그를 추가한다 <br>
+		 result5에 p태그를 추가한다. <br>
+		</p>
+	
+		 
+		<input type="button" value="추가" onclick="proc5()"> <br>
+		<br><br>
+		<div class="result" id="result5"></div>
+	
+	</div>	
+
+	<div class="box">
+		<p>
+			시작버튼 클릭시 첫번째 이미지를 선택해서 맨 뒤로 추가한다<br>
+			시작버튼은 사라진다
+		</p>
+		<div id="imgd">
+		<img class="im" alt="" src="../images/img1.jpg">
+		<img class="im"  alt="" src="../images/img2.jpg">
+		<img class="im"  alt="" src="../images/img3.jpg">
+		<img class="im"  alt="" src="../images/img4.jpg">
+		<img class="im"  alt="" src="../images/img5.jpg">
+		</div>
+		 
+		<input type="button" value="시작" id ="pro6" onclick="proc6(this)"> <br>
+		<input type="button" value="종료" onclick="stop()"> <br>
+		<br><br>
+		<div class="result" id="result6"></div>
+	
+	</div>		
+</body>
+</html>

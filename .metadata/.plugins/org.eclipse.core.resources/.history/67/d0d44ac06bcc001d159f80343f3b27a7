@@ -1,0 +1,24 @@
+<%@page import="kr.or.ddit.buyer.vo.BuyerVO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+ <%
+ //controller에서 저장된 데이터 꺼내기
+ BuyerVO vo = (BuyerVO).getAttribute("aaa");
+ 
+ 
+ %>
+ 
+ 
+ {
+ "id" : "<%= vo.getBuyer_id() %>" , 
+ "id" : "<%= vo.getBuyer_lgu() %>" , 
+ "id" : "<%= vo.getBuyer_name() %>" , 
+ "id" : "<%= vo.getBuyer_mail() %>" , 
+ "id" : "<%= vo.getBuyer_bank() %>" , 
+ "id" : "<%= vo.getBuyer_bankname() %>" , 
+ "id" : "<%= vo.getBuyer_bankno() %>" , 
+ "id" : "<%= vo.getBuyer_zip() %>" , 
+ "id" : "<%= vo.getBuyer_add1() %>" , 
+ "id" : "<%= vo.getBuyer_add2() %>"  
+}

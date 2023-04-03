@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mystyle.css">
+<script>
+proc1 = () => {
+	
+	setTimeout(function() {
+		document.getElementById('result1').style.backgroundColor= "red";
+			
+		
+	}, 1000)
+}
+
+proc2 = (but) => {  //but는 매겨변수라 지역변수임.
+	
+	but.style.display ="none";
+	
+	gbut = but; // but를 전역변수로 변경 
+	
+	a = setInterval(setOut, 500) 
+}	
+		
+function setOut(){
+	cr = parseInt(Math.random() * 256);//0부터 255까지 
+	cg = parseInt(Math.random() * 256);
+	cb = parseInt(Math.random() * 256);
+
+	
+	cr16 = cr.toString(16);
+	cg16 = cg.toString(16);
+	cb16 = cb.toString(15);
+//	document.getElementById('result2').style.backgroundColor = "rgb(" + cr + "," + cg + "," + cb + ")";
+	document.getElementById('result2').style.backgroundColor = "#" + cr16 + cg16 + cb16;
+}														//`#${cr16}${cg16}${cb16}` //"#fadaff"
+
+stop = (but) => {
+	gbut.style.display= "inline";
+	clearInterval(a);
+}	
+
+
+</script>
+</head>
+
+<body>
+
+
+	<div class="box">
+		<p>
+		setTimeout(fn, millisec) : millisec 시간이 경과한 후 function 수행 후 종료
+		</p>
+	
+		<input type="button" value="확인" onclick="proc1()"> <br>
+		<br>
+
+		<div class="result" id="result1"></div>
+	
+	</div>
+	
+	<div class="box">
+	
+		<p>
+		변수 = setInterval(fn, millisec) : millisec 시간이 경과할 때마다 function 수행 <br>
+		clearInterval(변수) : 변수에 실행을 종료
+		</p>
+	
+		<input type="button" value="확인" onclick="proc2(this)"> <br>
+		<input type="button" value="종료" onclick="stop()"> <br>
+		<br>
+
+		<div class="result" id="result2"></div>
+	
+	</div>
+</body>
+</html>

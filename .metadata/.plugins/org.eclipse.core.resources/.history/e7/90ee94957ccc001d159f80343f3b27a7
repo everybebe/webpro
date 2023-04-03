@@ -1,0 +1,24 @@
+package kr.or.ddit.prod.dao;
+
+import java.util.List;
+
+import kr.or.ddit.prod.vo.prodVO;
+
+public class prodDaoImpl implements IprodDao{
+
+	private static IprodDao dao;
+	
+	public static IprodDao getDao() {
+		if(dao ==null) dao = new prodDaoImpl();
+		
+		return dao;
+	} 
+	
+	
+	@Override
+	public List<prodVO> getAllprod() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

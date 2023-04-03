@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/mystyle.css">
+<script>
+let today = new Date();
+let day2 = new Date(10000);
+let day3 = new Date("2000.08.12");
+let day4 = new Date(2000, 07, 12);
+
+proc1 = () => {
+	str = today + "<br>";
+	str += day2 + "<br>";
+	str += day3 + "<br>";
+	str += day4 + "<br>";
+	
+	document.getElementById('result1').innerHTML= str;
+	
+	str2 = today.toLocaleString() + "<br>";
+	str2 += day2.toLocaleDateString() +  + "<br>";
+	str2 += day3.toLocaleTimeString() +  + "<br>";
+	str2 += day4.toLocaleString() +  + "<br>";
+	
+	document.getElementById('result1').innerHTML= str2;
+}
+
+proc2 = () => {
+	
+	res = today.getDay();
+	//alert(day);
+
+	switch(res) {
+	case 1:
+		res = "월요일";
+		break;
+	case 2:
+		res = "화요일";
+		break;	
+	case 3:
+		res = "수요일";
+		break;	
+	case 4:
+		res = "목요일";
+		break;	
+	case 5:
+		res = "금요일";
+		break;
+	case 6:
+		res = "월토일";
+		break;	
+	case 0:
+		res = "일요일";
+		break;		
+	}
+	str = today.toLocaleString()+ " " + res;
+	
+	document.getElementById('result2').innerText += str;
+}
+
+proc3 = () => {
+	const arr = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
+	//arr[0], arr[4], arr[5]
+	
+	day = today.getDay();
+	
+	str = today.toLocaleString()+ " " + arr[day];
+	str = `${today.toLocaleString()} ${arr[day]}`;
+	
+	document.getElementById('result3').innerText = str;		
+}
+
+proc4 = () => {
+	myday = new Date("1993.06.01");
+	//myday = new Date(2000,03-1,12);
+	
+	totime = today.getTime();
+	mytime = myday.getTime();
+	
+	times = totime - mytime;
+	
+	console.log(totime, mytime, times);
+	
+	times = times / 1000 / 60 / 60 / 24 / 365;
+	
+	str = today.toLocaleString() + "<br>";
+	str += myday.toLocaleString() + "<br>";
+	str += times + "년 동안 살았습니다";
+	
+	document.getElementById('result4').innerHTML = str;			
+}
+
+proc5 = () => {
+	
+	day100time = 1000*60*60*24*100; //100에 대한 millisec의 값
+	console.log(day100time);
+	
+	todaytime = today.getTime(); //현재 날짜의 milisec값
+	
+	times = todaytime + day100time; //
+	
+	day100 = new Date(times); //100일 후의 날짜
+
+	const arr = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
+	day = day100.getDay();
+	
+	str = day100.toLocaleString() + " " + arr[day];
+	
+	document.getElementById('result5').innerHTML = str;			
+
+}
+
+proc6 = () => {
+	 //id=sel를 검색 - 값 가져오기 - value
+	 selvalue = document.getElementById('sel').value;
+	 
+	 //값을 가지고 Date객체를 생성
+	 selday = new Date(selvalue);
+	
+	 //오늘의 getTime() - selDate의 getTime()
+	 times = today.getTime() - selday.getTime();
+ 	 
+	 console.log(times);
+	 if(times < 0) {
+		 alert("날짜 선택 오류");
+		 return false;
+	 }
+	 
+	 //경과한 날을 구한다 - /1000/60/60/24
+	 times = times / 1000 / 60 / 60 / 24;
+	
+	 //경과한 날을 비교한다 7일이 경과????
+	 if(times > 7) {
+		 res = "교환불가"
+	 }else{
+		 res = "교환가능"
+	 }		
+	 str = "현재날짜 : " + today.toLocaleDateString() + "<br>";
+	 str += "구입날짜 : " + selday.toLocaleDateString() + "<br>"; 
+	 str += res + "<br>";
+	 
+	 document.getElementById('result6').innerHTML = str;
+	 
+}
+
+proc7 = () => {
+	
+	//수료일(크리스마스) 날짜로 Date객체를 생성
+	xmas = new Date("2023.12.25");
+	
+	//times = xmas getTime() - 오늘의 getTime()
+	times = xmas.getTime() - today.getTime() ;
+	//1000 /60 /60 /24
+	day = times / 1000 / 60 / 60 / 24; 
+		
+	//출력
+	str = "크리스마스까지 " + day + "일 남았습니다";
+	document.getElementById('result7').innerHTML = str;
+}
+</script>
+</head>
+
+<body>
+	<div class="box">
+		<p></p>
+	
+		<input type="button" value="확인" onclick="proc1()"> <br>
+		<br>
+
+		<div class="result" id="result1"></div>
+	
+	</div>
+	
+	
+	<div class="box">
+	
+		<p>
+		요일구하기 : getDay() ; 0(일요일)~6(토요일)
+		
+		</p>
+	
+		<input type="button" value="확인" onclick="proc2()"> <br>
+		<br>
+
+		<div class="result" id="result2"></div>
+	
+	</div>
+	
+	<div class="box">
+	
+		<p>
+		요일구하기 : getDay() ; 0(일요일)~6(토요일)
+		배열 이용 
+		</p>
+	
+		<input type="button" value="확인" onclick="proc3()"> <br>
+		<br>
+
+		<div class="result" id="result3"></div>
+	
+	</div>
+	
+	<div class="box">
+	
+		<p>
+		경과시간 구하기 : getTime(); millisec값을 리턴 <br>
+		 millisec값 / 1000 = 실제 초 <br>
+		 태어난 날로부터 현재까지 몇 년이 경과 했는지  ?<br>
+		 100일 후의 날짜는 언제인지 ? <br>
+		</p>
+	
+		<input type="button" value="확인" onclick="proc4()"> <br>
+		<input type="button" value="확인" onclick="proc5()"> <br>
+		<br>
+
+		<div class="result" id="result4"></div>
+		<div class="result" id="result5"></div>
+	
+	</div>	
+	
+	<div class="box">
+	
+		<p>
+		경과시간 구하기 : getTime(); millisec값을 리턴 <br>
+		 millisec값 / 1000 = 실제 초 <br>
+		
+		선택한 날로 부터 현재까지 경과 일 수를 구한다<br>
+		7일 이상 경과 했으면 교환 불가능 아니면 교환가능<br>
+		</p>
+		
+		<input type="date" id="sel">
+		<input type="button" value="확인" onclick="proc6()">
+		
+		<br>
+		<div class="result" id="result6"></div>
+	
+	</div>	
+		
+    <div class="box">
+	
+		<p>
+		경과시간 구하기 : getTime(); millisec값을 리턴 <br>
+		 millisec값 / 1000 = 실제 초 <br>
+		
+		수료일/크리스마스까지 며칠 남았나?<br>
+		</p>
+		<input type="button" value="확인" onclick="proc7()">
+		
+		<br>
+		<div class="result" id="result7"></div>
+	
+	</div>	
+</body>
+</html>

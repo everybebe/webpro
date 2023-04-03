@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.catalina.filters.RequestDumperFilter"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="ApplicationScope"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SqlBuilder"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.dao.IMemberDao"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.dao.MemberDaoImpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.lprod.vo.LprodVO"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.lprod.dao.ILprodDao"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.lprod.dao.LprodDaoImpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.buyer.vo.BuyerVO"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.buyer.dao.IBuyerDao"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.buyer.service.IBuyerService"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.buyer.service.BuyerServiceImpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.buyer.dao.BuyerDaoImpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.lprod.service.ILprodService"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.IprodDao"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.prodDaoImpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.prod.service.IprodService"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.prod.service.prodServiceImpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.prod.vo.prodVO"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.mybatis.config.MybatisSqlSessionFactory"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.ZipVO"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.MemberVO"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.service.IMemberService"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.service.MemberServiceImpl"/>
+</qualifiedTypeNameHistroy>

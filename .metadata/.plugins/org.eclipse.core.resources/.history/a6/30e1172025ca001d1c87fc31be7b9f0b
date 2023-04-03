@@ -1,0 +1,54 @@
+<%@page import="kr.or.ddit.buyer.vo.BuyerVO"%>
+<%@page import="java.util.List"%>
+<%@ page import="org.json.JSONArray"%>
+<%@ page import="org.json.JSONObject"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+
+List<BuyerVO> buylist = (List<BuyerVO>)request.getAttribute("a");
+
+%>
+
+[
+
+<% 
+
+ for(int i =0; i<buylist.size(); i++){
+	 BuyerVO vo = buylist.get(i);
+	 if(i > 0) out.print(",");
+
+%>
+ {
+ 
+		"name" : "<%= vo.getBuyer_name() %>",
+}
+ 		
+ {
+<%
+
+ 		JSONArray jsonArray = new JSONArray();
+		JSONObject jsonObject = new JSONObject();
+		
+		jsonObject.put("id", vo.getBuyer_id());
+		jsonObject.put("name", vo.getBuyer_name());
+		jsonObject.put("lgu", vo.getBuyer_lgu());
+		jsonObject.put("bank", vo.getBuyer_bank());
+		jsonObject.put("bankno", vo.getBuyer_bankno());
+		jsonObject.put("bankname", vo.getBuyer_bankname());
+		jsonObject.put("zip", vo.getBuyer_zip());
+		jsonObject.put("add1", vo.getBuyer_add1());
+		jsonObject.put("add2", vo.getBuyer_add2());
+		jsonObject.put("mail", vo.getBuyer_mail());
+		jsonArray.put(jsonObject);
+		
+%>
+	
+ }
+ 
+ <%
+ }
+ %>
+
+]    

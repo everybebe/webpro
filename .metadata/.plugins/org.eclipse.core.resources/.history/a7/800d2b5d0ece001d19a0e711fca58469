@@ -1,0 +1,33 @@
+package kr.or.ddit.member.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+@WebServlet("/IdCheck.do")
+public class IdCheck extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		request.setCharacterEncoding("utf-8");
+	
+		
+		//요청시 전송데이터 받기 -id
+		String uId = request.getParameter("id");
+		
+		//service 객체 얻기
+		
+		
+		//service 메소드 호출 - 결과값 받기
+		
+		
+		//result에 결과값 저장
+		
+		
+		//view페이지로 이동
+	}
+
+}

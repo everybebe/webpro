@@ -1,0 +1,10 @@
+<%@page import="kr.or.ddit.prod.vo.prodVO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+//controller에서 저장한 데이터 꺼내기
+prodVO vo = (prodVO)request.getAttribute("prodvo");
+
+
+%>

@@ -1,0 +1,30 @@
+package kr.or.ddit.prod.service;
+
+import java.util.List;
+
+import kr.or.ddit.lprod.service.ILprodService;
+import kr.or.ddit.lprod.vo.LprodVO;
+import kr.or.ddit.prod.vo.prodVO;
+
+public class prodServiceImpl implements IprodService {
+
+	@Override
+	public List<prodVO> getAllprod() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public prodVO getProdLgu(String prodLgu) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public prodVO getProdId(String prodId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}
